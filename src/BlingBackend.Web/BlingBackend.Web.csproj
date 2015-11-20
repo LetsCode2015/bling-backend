@@ -186,6 +186,14 @@
       <Project>{853DF53A-1A95-465A-B134-783E8B7CFE39}</Project>
       <Name>BlingBackend.Autofac</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BlingBackend.Logic\BlingBackend.Logic.csproj">
+      <Project>{D3F4BDD9-EFDB-4521-9BA1-D05318DD9910}</Project>
+      <Name>BlingBackend.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlingBackend.Model\BlingBackend.Model.csproj">
+      <Project>{FAA4EE5E-6E72-499D-8236-B0CFA8F78784}</Project>
+      <Name>BlingBackend.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
