@@ -22,11 +22,11 @@ namespace BlingBackend.Autofac
             builder.RegisterType<BlingBackendDbContext>()
                 .AsSelf();
 
-            builder.RegisterType<BoardRepositoryMocked>()
+            builder.RegisterType<BoardRepository>()
                 .As<IBoardRepository>()
                 .InstancePerDependency();
 
-            builder.RegisterType<TaskRepositoryMocked>()
+            builder.RegisterType<TaskRepository>()
                .As<ITaskRepository>()
                .InstancePerDependency();
         }
