@@ -12,20 +12,21 @@ namespace BlingBackeng.Data.Logic
         protected RepositoryBase(BlingBackendDbContext dbContext)
         {
             if (dbContext == null)
-                throw new ArgumentNullException(nameof(dbContext));
+                throw new ArgumentNullException("dbContext");
 
             _dbContext = dbContext;
         }
 
         public T Create(T entity)
         {
-            _dbContext.Entry<T>(entity);
+            _dbContext.Entry(entity);
             return entity;
         }
 
         public T Get(int id)
         {
-            _dbContext.Entry()
+            //_dbContext.Set<T>().
+            throw new System.NotImplementedException();
         }
 
         public T Update(T entity)

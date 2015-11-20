@@ -13,7 +13,7 @@ namespace BlingBackend.Logic
             _repository = repository;
         }
 
-        public T Create(T entity)
+        public int Create(T entity)
         {
             throw new System.NotImplementedException();
         }
@@ -28,7 +28,7 @@ namespace BlingBackend.Logic
             throw new System.NotImplementedException();
         }
 
-        public T Delete(int id)
+        public void Delete(int id)
         {
             throw new System.NotImplementedException();
         }
