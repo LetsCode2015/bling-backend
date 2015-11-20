@@ -1,6 +1,8 @@
-﻿namespace BlingBackend.Web.Controllers
+﻿using BlingBackend.Logic.Interfaces;
+
+namespace BlingBackend.Web.Controllers
 {
-    public class BaseController
+    public abstract class BaseController
     {
     }
 }

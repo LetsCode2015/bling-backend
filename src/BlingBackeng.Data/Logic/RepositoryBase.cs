@@ -15,7 +15,7 @@ namespace BlingBackeng.Data.Logic
         protected RepositoryBase(BlingBackendDbContext dbContext)
         {
             if (dbContext == null)
-                throw new ArgumentNullException(nameof(dbContext));
+                throw new ArgumentNullException("dbContext");
 
             _dbContext = dbContext;
         }
@@ -33,7 +33,7 @@ namespace BlingBackeng.Data.Logic
 
         public T Get(int id)
         {
-            return _dbContext.Set<T>().FirstOrDefault(e => e.Id == id);
+            _dbContext.Entry()
         }
 
         public T Update(T entity)

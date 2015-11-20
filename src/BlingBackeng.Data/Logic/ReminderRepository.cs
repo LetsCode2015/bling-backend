@@ -5,7 +5,8 @@ namespace BlingBackeng.Data.Logic
 {
     public class ReminderRepository : RepositoryBase<Reminder>, IReminderRepository
     {
-        public ReminderRepository(BlingBackendDbContext dbContext) : base(dbContext)
+        public ReminderRepository(BlingBackendDbContext dbContext)
+            : base(dbContext)
         {
         }
     }
