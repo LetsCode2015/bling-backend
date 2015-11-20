@@ -54,7 +54,12 @@
     <Compile Include="Logic\BoardRepositoryMocked.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BlingBackend.Model\BlingBackend.Model.csproj">
+      <Project>{FAA4EE5E-6E72-499D-8236-B0CFA8F78784}</Project>
+      <Name>BlingBackend.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

@@ -1,4 +1,7 @@
-﻿using System.Web;
+﻿using Autofac;
+using Autofac.Integration.Mvc;
+using BlingBackend.Autofac;
+using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -9,7 +12,9 @@ namespace BlingBackend.Web
     {
         protected void Application_Start()
         {
-            //            DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+            ContainerBuilder containerBuilder = new ContainerBuilder();
+            containerBuilder.RegisterModule(new BlingBackendAutofacModule());
+            DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

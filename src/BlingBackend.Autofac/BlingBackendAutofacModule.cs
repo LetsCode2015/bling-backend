@@ -1,6 +1,8 @@
-﻿namespace BlingBackend.Autofac
+﻿using Autofac;
+
+namespace BlingBackend.Autofac
 {
-    public class BlingBackendAutofacModule
+    public class BlingBackendAutofacModule : Module
     {
     }
 }
