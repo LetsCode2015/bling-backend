@@ -42,6 +42,7 @@
     <Compile Include="Board.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="Group.cs" />
+    <Compile Include="IEntity.cs" />
     <Compile Include="Mocked\MockedBoards.cs" />
     <Compile Include="Mocked\MockedCategories.cs" />
     <Compile Include="Mocked\MockedGroups.cs" />

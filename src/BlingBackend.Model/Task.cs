@@ -2,7 +2,7 @@
 
 namespace BlingBackend.Model
 {
-    public class Task
+    public class Task : IEntity
     {
         public int Id { get; set; }
 
@@ -15,6 +15,8 @@ namespace BlingBackend.Model
         public DateTime DueDate { get; set; }
 
         public DateTime? CompletitionDate { get; set; }
+
+        public int BoardId { get; set; }
 
         public virtual Category Category { get; set; }
 

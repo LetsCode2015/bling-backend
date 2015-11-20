@@ -2,7 +2,7 @@
 
 namespace BlingBackend.Model
 {
-    public class Board
+    public class Board : IEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -1,11 +1,14 @@
-﻿using BlingBackeng.Data.Interface;
+﻿using BlingBackend.Model;
+using BlingBackeng.Data.Interface;
 using System;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 
 namespace BlingBackeng.Data.Logic
 {
     public abstract class RepositoryBase<T> : IRepository<T>
-        where T : class
+        where T : class, IEntity
     {
         private readonly BlingBackendDbContext _dbContext;
 
@@ -19,28 +22,39 @@ namespace BlingBackeng.Data.Logic
 
         public T Create(T entity)
         {
-            _dbContext.Entry<T>(entity);
-            return entity;
+            T addedEntity = _dbContext.Set<T>().Add(entity);
+
+            //            DbEntityEntry < T> entityToCreate = _dbContext.Entry(entity);
+            //            entityToCreate.State = EntityState.Added;
+            //            _dbContext.Set<T>().
+            _dbContext.SaveChanges();
+            return addedEntity;
         }
 
         public T Get(int id)
         {
-            _dbContext.Entry()
+            return _dbContext.Set<T>().FirstOrDefault(e => e.Id == id);
         }
 
         public T Update(T entity)
         {
-            throw new System.NotImplementedException();
+            //            _dbContext.Set<T>().Attach(entity);
+            _dbContext.Entry(entity).State = EntityState.Modified;
+            _dbContext.SaveChanges();
+            return entity;
         }
 
         public T Delete(int id)
         {
-            throw new System.NotImplementedException();
+            T entity = Get(id);
+            _dbContext.Entry(entity).State = EntityState.Deleted;
+            _dbContext.SaveChanges();
+            return entity;
         }
 
         public IQueryable<T> GetAll()
         {
-            throw new System.NotImplementedException();
+            return _dbContext.Set<T>();
         }
     }
 }

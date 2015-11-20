@@ -2,7 +2,7 @@ using System;
 
 namespace BlingBackend.Model
 {
-    public class Reminder
+    public class Reminder : IEntity
     {
         public int Id { get; set; }
         public virtual Task Task { get; set; }

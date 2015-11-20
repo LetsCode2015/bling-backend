@@ -5,5 +5,8 @@ namespace BlingBackeng.Data.Logic
 {
     public class TaskRepository : RepositoryBase<Task>, ITaskRepository
     {
+        public TaskRepository(BlingBackendDbContext dbContext) : base(dbContext)
+        {
+        }
     }
 }
