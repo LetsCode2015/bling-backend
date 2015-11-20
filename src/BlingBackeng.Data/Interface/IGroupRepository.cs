@@ -2,7 +2,7 @@
 
 namespace BlingBackeng.Data.Interface
 {
-    public interface ITaskRepository : IRepository<Task>
+    public interface IGroupRepository : IRepository<Group>
     {
     }
 }

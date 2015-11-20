@@ -1,10 +1,8 @@
 ﻿using BlingBackend.Model;
-using System.Linq;
 
 namespace BlingBackeng.Data.Interface
 {
-    public interface IBoardRepository
+    public interface IBoardRepository : IRepository<Board>
     {
-        IQueryable<Board> GetBoards();
     }
 }

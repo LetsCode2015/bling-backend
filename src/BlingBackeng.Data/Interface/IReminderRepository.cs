@@ -1,8 +1,8 @@
-﻿using System.Linq;
+﻿using BlingBackend.Model;
 
 namespace BlingBackeng.Data.Interface
 {
-    public interface IReminderRepository
+    public interface IReminderRepository : IRepository<Reminder>
     {
     }
 }

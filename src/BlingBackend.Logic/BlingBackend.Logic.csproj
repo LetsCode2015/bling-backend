@@ -39,7 +39,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\ILogic.cs" />
+    <Compile Include="Interfaces\ICategoryLogic.cs" />
+    <Compile Include="Interfaces\IGroupLogic.cs" />
+    <Compile Include="Interfaces\IReminderLogic.cs" />
+    <Compile Include="Interfaces\IBoardLogic.cs" />
+    <Compile Include="Interfaces\IUserLogic.cs" />
+    <Compile Include="Interfaces\ITaskLogic.cs" />
+    <Compile Include="LogicBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CategoryLogic.cs" />
+    <Compile Include="GroupLogic.cs" />
+    <Compile Include="ReminderLogic.cs" />
+    <Compile Include="UserLogic.cs" />
+    <Compile Include="BoardLogic.cs" />
+    <Compile Include="TaskLogic.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlingBackend.Model\BlingBackend.Model.csproj">
+      <Project>{FAA4EE5E-6E72-499D-8236-B0CFA8F78784}</Project>
+      <Name>BlingBackend.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlingBackeng.Data\BlingBackend.Data.csproj">
+      <Project>{12FA4CF5-0AE2-4720-B5DA-792A5715754C}</Project>
+      <Name>BlingBackend.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

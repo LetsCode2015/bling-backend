@@ -49,11 +49,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BlingBackendDbContext.cs" />
+    <Compile Include="Interface\ICategoryRepository.cs" />
+    <Compile Include="Interface\IUserRepository.cs" />
+    <Compile Include="Interface\IGroupRepository.cs" />
     <Compile Include="Interface\IBoardRepository.cs" />
     <Compile Include="Interface\IReminderRepository.cs" />
+    <Compile Include="Interface\IRepository.cs" />
     <Compile Include="Interface\ITaskRepository.cs" />
     <Compile Include="Logic\BoardRepository.cs" />
     <Compile Include="Logic\BoardRepositoryMocked.cs" />
+    <Compile Include="Logic\RepositoryBase.cs" />
+    <Compile Include="Logic\UserRepository.cs" />
+    <Compile Include="Logic\CategoryRepository.cs" />
+    <Compile Include="Logic\ReminderRepository.cs" />
     <Compile Include="Logic\TaskRepository.cs" />
     <Compile Include="Logic\TaskRepositoryMocked.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

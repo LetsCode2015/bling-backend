@@ -3,7 +3,7 @@ using BlingBackeng.Data.Interface;
 
 namespace BlingBackeng.Data.Logic
 {
-    public class TaskRepository : RepositoryBase<Task>, ITaskRepository
+    public class UserRepository : RepositoryBase<User>, IUserRepository
     {
     }
 }
