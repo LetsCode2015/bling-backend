@@ -6,7 +6,6 @@ namespace BlingBackend.Model.Mocked
     {
         public static User Mateusz = new User
         {
-            Id = 1,
             Name = "Mateusz",
             Facebook = string.Empty,
             Login = "Mateusz",
@@ -16,7 +15,6 @@ namespace BlingBackend.Model.Mocked
 
         public static User Bartek = new User
         {
-            Id = 1,
             Name = "Bartek",
             Facebook = string.Empty,
             Login = "Bartek",
@@ -26,8 +24,8 @@ namespace BlingBackend.Model.Mocked
 
         public static User Patryk = new User
         {
-            Id = 2,
-            Name = "Patryk",
+            Id = 5,
+            Name = "Patryk1",
             Facebook = string.Empty,
             Login = "Patryk",
             Password = "Test123",
@@ -36,7 +34,6 @@ namespace BlingBackend.Model.Mocked
 
         public static User Piotrek = new User
         {
-            Id = 1,
             Name = "Piotrek",
             Facebook = string.Empty,
             Login = "Piotrek",

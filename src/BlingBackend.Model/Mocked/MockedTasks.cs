@@ -6,20 +6,19 @@ namespace BlingBackend.Model.Mocked
     {
         public static Task BuyBeer = new Task
         {
-            Id = 1,
             Description = "Buy fav beer",
-            Category = MockedCategories.ShoppingCategory,
-            Owner = MockedUsers.Mateusz,
+            Category = MockedCategories.HomeCategory,
+            Owner = MockedUsers.Patryk,
             Title = "Buy beer",
             CompletitionDate = null,
             Creator = MockedUsers.Patryk,
             DueDate = DateTime.Now.AddDays(20),
-            Status = TaskStatus.New
+            Status = TaskStatus.New,
+            BoardId = 1
         };
 
         public static Task WashDishes = new Task
         {
-            Id = 2,
             Description = "Wash all dishes",
             Category = MockedCategories.HomeCategory,
             Owner = MockedUsers.Piotrek,
@@ -32,7 +31,7 @@ namespace BlingBackend.Model.Mocked
 
         public static Task InviteFriends = new Task
         {
-            Id = 3,
+            Id = 0,
             Description = "Invite friends",
             Category = MockedCategories.HomeCategory,
             Owner = MockedUsers.Piotrek,

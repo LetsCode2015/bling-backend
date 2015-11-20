@@ -45,6 +45,13 @@ namespace BlingBackend.Autofac
             builder.RegisterType<UserRepository>()
                .As<IUserRepository>()
                .InstancePerDependency();
+            builder.RegisterType<GroupRepository>()
+               .As<IGroupRepository>()
+               .InstancePerDependency();
+
+            builder.RegisterType<CategoryRepository>()
+              .As<ICategoryRepository>()
+              .InstancePerDependency();
         }
     }
 }
