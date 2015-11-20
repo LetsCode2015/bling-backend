@@ -47,7 +47,6 @@
     <Compile Include="Reminder.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Task.cs" />
     <Compile Include="TaskStatus.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>

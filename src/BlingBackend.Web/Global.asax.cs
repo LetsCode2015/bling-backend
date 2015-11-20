@@ -14,7 +14,7 @@ namespace BlingBackend.Web
         {
             ContainerBuilder containerBuilder = new ContainerBuilder();
             containerBuilder.RegisterModule(new BlingBackendAutofacModule());
-            DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+            DependencyResolver.SetResolver(new AutofacDependencyResolver(containerBuilder.Build()));
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
