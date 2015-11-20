@@ -16,34 +16,33 @@ namespace BlingBackend.Web.Controllers
         }
 
         [HttpGet]
-        public List<Board> GetAll()
+        public ActionResult GetAll()
         {
-            return _logic.GetAll()
-                .ToList();
+            return Json(_logic.GetAll().ToList());
         }
 
         [HttpPost]
-        public int Create(Board item)
+        public ActionResult Create(Board item)
         {
-            return _logic.Create(item);
+            return Json(_logic.Create(item));
         }
 
         [HttpGet]
-        public Board Get(int id)
+        public ActionResult Get(int id)
         {
-            return _logic.Get(id);
+            return Json(_logic.Get(id));
         }
 
         [HttpPost]
-        public void Update(Board item)
+        public ActionResult Update(Board item)
         {
-            _logic.Update(item);
+            return Json(_logic.Update(item));
         }
 
         [HttpPost]
-        public void Delete(int id)
+        public ActionResult Delete(int id)
         {
-            _logic.Delete(id);
+            return Json(_logic.Delete(id));
         }
     }
 }

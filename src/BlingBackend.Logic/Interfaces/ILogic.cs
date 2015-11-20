@@ -6,8 +6,8 @@ namespace BlingBackend.Logic.Interfaces
     {
         int Create(T entity);
         T Get(int id);
-        T Update(T entity);
-        void Delete(int id);
+        bool Update(T entity);
+        bool Delete(int id);
         IQueryable<T> GetAll();
     }
 }

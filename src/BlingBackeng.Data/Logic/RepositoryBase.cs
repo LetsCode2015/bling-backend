@@ -17,7 +17,7 @@ namespace BlingBackeng.Data.Logic
             _dbContext = dbContext;
         }
 
-        public T Create(T entity)
+        public int Create(T entity)
         {
             _dbContext.Entry(entity);
             return entity;
@@ -29,12 +29,12 @@ namespace BlingBackeng.Data.Logic
             throw new System.NotImplementedException();
         }
 
-        public T Update(T entity)
+        public bool Update(T entity)
         {
             throw new System.NotImplementedException();
         }
 
-        public T Delete(int id)
+        public bool Delete(int id)
         {
             throw new System.NotImplementedException();
         }
