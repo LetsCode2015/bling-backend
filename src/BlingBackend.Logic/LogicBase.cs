@@ -23,12 +23,12 @@ namespace BlingBackend.Logic
             throw new System.NotImplementedException();
         }
 
-        public T Update(T entity)
+        public bool Update(T entity)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Delete(int id)
+        public bool Delete(int id)
         {
             throw new System.NotImplementedException();
         }

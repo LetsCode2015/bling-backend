@@ -24,24 +24,26 @@ namespace BlingBackeng.Data.Logic
         {
             T addedEntity = _dbContext.Set<T>().Add(entity);
 
-            //            DbEntityEntry < T> entityToCreate = _dbContext.Entry(entity);
-            //            entityToCreate.State = EntityState.Added;
-            //            _dbContext.Set<T>().
+            ////DbEntityEntry<T> entityToCreate = _dbContext.Entry(entity);
+            ////entityToCreate.State = EntityState.Added;
+            ////_dbContext.Set<T>().
             _dbContext.SaveChanges();
-            return addedEntity;
+            return addedEntity.Id;
         }
 
         public T Get(int id)
         {
-            _dbContext.Entry()
+            return _dbContext
+                .Set<T>()
+                .FirstOrDefault(e => e.Id == id);
         }
 
         public bool Update(T entity)
         {
-            //            _dbContext.Set<T>().Attach(entity);
+            ////_dbContext.Set<T>().Attach(entity);
             _dbContext.Entry(entity).State = EntityState.Modified;
             _dbContext.SaveChanges();
-            return entity;
+            return true;
         }
 
         public bool Delete(int id)
@@ -49,7 +51,7 @@ namespace BlingBackeng.Data.Logic
             T entity = Get(id);
             _dbContext.Entry(entity).State = EntityState.Deleted;
             _dbContext.SaveChanges();
-            return entity;
+            return true;
         }
 
         public IQueryable<T> GetAll()
