@@ -46,6 +46,9 @@
     <Compile Include="Mocked\MockedUsers.cs" />
     <Compile Include="Task.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reminder.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="TaskStatus.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
