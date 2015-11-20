@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlingBackend.Model", "BlingBackend.Model\BlingBackend.Model.csproj", "{FAA4EE5E-6E72-499D-8236-B0CFA8F78784}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlingBackend.Logic", "BlingBackend.Logic\BlingBackend.Logic.csproj", "{D3F4BDD9-EFDB-4521-9BA1-D05318DD9910}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlingBackend.Infrastructure", "BlingBackend.Infrastructure\BlingBackend.Infrastructure.csproj", "{1F62D6AD-1370-460A-B794-CF12C2E984C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlingBackend.Autofac", "BlingBackend.Autofac\BlingBackend.Autofac.csproj", "{853DF53A-1A95-465A-B134-783E8B7CFE39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{1F62D6AD-1370-460A-B794-CF12C2E984C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F62D6AD-1370-460A-B794-CF12C2E984C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F62D6AD-1370-460A-B794-CF12C2E984C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853DF53A-1A95-465A-B134-783E8B7CFE39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853DF53A-1A95-465A-B134-783E8B7CFE39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853DF53A-1A95-465A-B134-783E8B7CFE39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853DF53A-1A95-465A-B134-783E8B7CFE39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
