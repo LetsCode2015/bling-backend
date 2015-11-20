@@ -58,6 +58,7 @@
     <Compile Include="Interface\ITaskRepository.cs" />
     <Compile Include="Logic\BoardRepository.cs" />
     <Compile Include="Logic\BoardRepositoryMocked.cs" />
+    <Compile Include="Logic\GroupRepository.cs" />
     <Compile Include="Logic\RepositoryBase.cs" />
     <Compile Include="Logic\UserRepository.cs" />
     <Compile Include="Logic\CategoryRepository.cs" />
