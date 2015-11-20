@@ -4,8 +4,8 @@ namespace BlingBackend.Model
 {
     public class Board
     {
-        public int Id { get; set; } 
-        public string Name { get; set; } 
-        public List<Task> Tasks { get; set; } 
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public virtual ICollection<Task> Tasks { get; set; }
     }
 }

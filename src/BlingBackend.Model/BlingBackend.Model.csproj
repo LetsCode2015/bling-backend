@@ -42,7 +42,11 @@
     <Compile Include="Board.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="Group.cs" />
+    <Compile Include="Mocked\MockedBoards.cs" />
     <Compile Include="Mocked\MockedCategories.cs" />
+    <Compile Include="Mocked\MockedGroups.cs" />
+    <Compile Include="Mocked\MockedReminders.cs" />
+    <Compile Include="Mocked\MockedTasks.cs" />
     <Compile Include="Mocked\MockedUsers.cs" />
     <Compile Include="Task.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

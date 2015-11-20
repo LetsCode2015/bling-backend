@@ -10,9 +10,11 @@ namespace BlingBackend.Model
 
         public string Description { get; set; }
 
+        public TaskStatus Status { get; set; }
+
         public DateTime DueDate { get; set; }
 
-        public DateTime CompletitionDate { get; set; }
+        public DateTime? CompletitionDate { get; set; }
 
         public virtual Category Category { get; set; }
 
