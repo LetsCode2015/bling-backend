@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlingBackend.Model", "BlingBackend.Model\BlingBackend.Model.csproj", "{FAA4EE5E-6E72-499D-8236-B0CFA8F78784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlingBackend.Web", "BlingBackend.Web\BlingBackend.Web.csproj", "{B2322B10-FFCB-445A-9B9C-5EE71CD27889}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlingBackend.Data", "BlingBackeng.Data\BlingBackend.Data.csproj", "{12FA4CF5-0AE2-4720-B5DA-792A5715754C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlingBackend.Core", "BlingBackend.Core\BlingBackend.Core.csproj", "{8AC37397-DD25-48DA-BC78-E7ABC4506297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlingBackend.Logic", "BlingBackend.Logic\BlingBackend.Logic.csproj", "{D3F4BDD9-EFDB-4521-9BA1-D05318DD9910}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlingBackend.Infrastructure", "BlingBackend.Infrastructure\BlingBackend.Infrastructure.csproj", "{1F62D6AD-1370-460A-B794-CF12C2E984C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAA4EE5E-6E72-499D-8236-B0CFA8F78784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA4EE5E-6E72-499D-8236-B0CFA8F78784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA4EE5E-6E72-499D-8236-B0CFA8F78784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAA4EE5E-6E72-499D-8236-B0CFA8F78784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2322B10-FFCB-445A-9B9C-5EE71CD27889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2322B10-FFCB-445A-9B9C-5EE71CD27889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2322B10-FFCB-445A-9B9C-5EE71CD27889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2322B10-FFCB-445A-9B9C-5EE71CD27889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12FA4CF5-0AE2-4720-B5DA-792A5715754C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12FA4CF5-0AE2-4720-B5DA-792A5715754C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12FA4CF5-0AE2-4720-B5DA-792A5715754C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12FA4CF5-0AE2-4720-B5DA-792A5715754C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AC37397-DD25-48DA-BC78-E7ABC4506297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC37397-DD25-48DA-BC78-E7ABC4506297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC37397-DD25-48DA-BC78-E7ABC4506297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC37397-DD25-48DA-BC78-E7ABC4506297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3F4BDD9-EFDB-4521-9BA1-D05318DD9910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3F4BDD9-EFDB-4521-9BA1-D05318DD9910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3F4BDD9-EFDB-4521-9BA1-D05318DD9910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3F4BDD9-EFDB-4521-9BA1-D05318DD9910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F62D6AD-1370-460A-B794-CF12C2E984C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F62D6AD-1370-460A-B794-CF12C2E984C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F62D6AD-1370-460A-B794-CF12C2E984C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F62D6AD-1370-460A-B794-CF12C2E984C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
