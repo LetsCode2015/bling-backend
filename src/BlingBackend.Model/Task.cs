@@ -14,6 +14,10 @@ namespace BlingBackend.Model
 
         public DateTime CompletitionDate { get; set; }
 
-        public TaskCategory Category { get; set; }
+        public virtual Category Category { get; set; }
+
+        public virtual User Creator { get; set; }
+
+        public virtual User Owner { get; set; }
     }
 }
