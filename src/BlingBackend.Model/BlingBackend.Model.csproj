@@ -42,7 +42,12 @@
     <Compile Include="Board.cs" />
     <Compile Include="Group.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reminder.cs" />
+    <Compile Include="Reminder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Task.cs" />
+    <Compile Include="TaskCategory.cs" />
+    <Compile Include="TaskStatus.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

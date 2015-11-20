@@ -1,4 +1,6 @@
-﻿namespace BlingBackend.Model
+﻿using System.Collections.Generic;
+
+namespace BlingBackend.Model
 {
     public class Board
     {
