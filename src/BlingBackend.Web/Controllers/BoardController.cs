@@ -20,6 +20,18 @@ namespace BlingBackend.Web.Controllers
             return Json(_logic.GetAll().ToList(), JsonRequestBehavior.AllowGet);
         }
 
+        [HttpGet]
+        public ActionResult GetMy()
+        {
+            return Json(_logic.GetMy().ToList(), JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
+        public ActionResult GetFav()
+        {
+            return Json(_logic.GetFav().ToList(), JsonRequestBehavior.AllowGet);
+        }
+
         [HttpPost]
         public ActionResult Create(Board item)
         {

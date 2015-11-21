@@ -2,7 +2,6 @@
 using BlingBackeng.Data.Interface;
 using System;
 using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
 using System.Linq;
 
 namespace BlingBackeng.Data.Logic
@@ -10,7 +9,7 @@ namespace BlingBackeng.Data.Logic
     public abstract class RepositoryBase<T> : IRepository<T>
         where T : class, IEntity
     {
-        private readonly BlingBackendDbContext _dbContext;
+        protected readonly BlingBackendDbContext _dbContext;
 
         protected RepositoryBase(BlingBackendDbContext dbContext)
         {
