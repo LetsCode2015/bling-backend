@@ -33,7 +33,8 @@ namespace BlingBackeng.Data.Logic
 
         public T Get(int id)
         {
-            _dbContext.Entry()
+            return _dbContext.Set<T>()
+                .FirstOrDefault(e => e.Id == id);
         }
 
         public T Update(T entity)
