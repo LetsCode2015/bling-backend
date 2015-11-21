@@ -62,6 +62,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BlingBackend.Model\BlingBackend.Model.csproj">
+      <Project>{faa4ee5e-6e72-499d-8236-b0cfa8f78784}</Project>
+      <Name>BlingBackend.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BlingBackeng.Data\BlingBackend.Data.csproj">
       <Project>{12FA4CF5-0AE2-4720-B5DA-792A5715754C}</Project>
       <Name>BlingBackend.Data</Name>
