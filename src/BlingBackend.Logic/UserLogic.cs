@@ -14,7 +14,7 @@ namespace BlingBackend.Logic
             _userRepository = userRepository;
         }
 
-        public void Signup(User item)
+        public bool Signup(User item)
         {
             throw new System.NotImplementedException();
         }

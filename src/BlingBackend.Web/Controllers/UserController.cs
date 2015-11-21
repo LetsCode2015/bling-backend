@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Web.Mvc;
 using BlingBackend.Logic.Interfaces;
 using BlingBackend.Model;
@@ -16,40 +15,39 @@ namespace BlingBackend.Web.Controllers
         }
 
         [HttpGet]
-        public void Signup(User item)
+        public ActionResult Signup(User item)
         {
-             _logic.Signup(item);
+            return Json(_logic.Signup(item), JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet]
-        public List<User> GetAll()
+        public ActionResult GetAll()
         {
-            return _logic.GetAll()
-                .ToList();
+            return Json(_logic.GetAll().ToList(), JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
-        public int Create(User item)
+        public ActionResult Create(User item)
         {
-            return _logic.Create(item);
+            return Json(_logic.Create(item));
         }
 
         [HttpGet]
-        public User Get(int id)
+        public ActionResult Get(int id)
         {
-            return _logic.Get(id);
+            return Json(_logic.Get(id), JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
-        public void Update(User item)
+        public ActionResult Update(User item)
         {
-            _logic.Update(item);
+            return Json(_logic.Update(item));
         }
 
         [HttpPost]
-        public void Delete(int id)
+        public ActionResult Delete(int id)
         {
-            _logic.Delete(id);
+            return Json(_logic.Delete(id));
         }
     }
 }

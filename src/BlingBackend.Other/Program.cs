@@ -13,17 +13,17 @@ namespace BlingBackend.Other
             cb.RegisterModule(new BlingBackendAutofacModule());
             var container = cb.Build();
 
-            //            IUserRepository ur = container.Resolve<IUserRepository>();
-            //            ur.Create(MockedUsers.Patryk);
+            IUserRepository ur = container.Resolve<IUserRepository>();
+            ur.Create(MockedUsers.Patryk);
 
-            //            ICategoryRepository cr = container.Resolve<ICategoryRepository>();
-            //            cr.Create(MockedCategories.HomeCategory);
-            //
+            ICategoryRepository cr = container.Resolve<ICategoryRepository>();
+            cr.Create(MockedCategories.HomeCategory);
+
             ITaskRepository tr = container.Resolve<ITaskRepository>();
             tr.Create(MockedTasks.BuyBeer);
 
-            //            IBoardRepository br = container.Resolve<IBoardRepository>();
-            //            br.Create(MockedBoards.HomeBoard);
+            IBoardRepository br = container.Resolve<IBoardRepository>();
+            br.Create(MockedBoards.HomeBoard);
         }
     }
 }

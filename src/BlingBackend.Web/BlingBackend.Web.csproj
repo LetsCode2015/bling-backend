@@ -169,6 +169,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\FillDb.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -193,6 +194,10 @@
     <ProjectReference Include="..\BlingBackend.Model\BlingBackend.Model.csproj">
       <Project>{FAA4EE5E-6E72-499D-8236-B0CFA8F78784}</Project>
       <Name>BlingBackend.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlingBackeng.Data\BlingBackend.Data.csproj">
+      <Project>{12FA4CF5-0AE2-4720-B5DA-792A5715754C}</Project>
+      <Name>BlingBackend.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
