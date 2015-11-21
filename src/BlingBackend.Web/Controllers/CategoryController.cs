@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using BlingBackend.Logic.Interfaces;
+using BlingBackend.Model;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
-using BlingBackend.Logic.Interfaces;
-using BlingBackend.Model;
 
 namespace BlingBackend.Web.Controllers
 {
@@ -10,7 +10,7 @@ namespace BlingBackend.Web.Controllers
     {
         private readonly ICategoryLogic _logic;
 
-        public CategoryController(ICategoryLogic logic) 
+        public CategoryController(ICategoryLogic logic)
         {
             _logic = logic;
         }

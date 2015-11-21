@@ -1,4 +1,6 @@
 ﻿using Autofac;
+using BlingBackend.Logic;
+using BlingBackend.Logic.Interfaces;
 using BlingBackeng.Data;
 using BlingBackeng.Data.Interface;
 using BlingBackeng.Data.Logic;
@@ -15,6 +17,29 @@ namespace BlingBackend.Autofac
 
         private void RegisterLogic(ContainerBuilder builder)
         {
+            builder.RegisterType<BoardLogic>()
+               .As<IBoardLogic>()
+               .InstancePerRequest();
+
+            builder.RegisterType<CategoryLogic>()
+              .As<ICategoryLogic>()
+              .InstancePerRequest();
+
+            builder.RegisterType<GroupLogic>()
+              .As<IGroupLogic>()
+              .InstancePerRequest();
+
+            builder.RegisterType<ReminderLogic>()
+              .As<IReminderLogic>()
+              .InstancePerRequest();
+
+            builder.RegisterType<TaskLogic>()
+             .As<ITaskLogic>()
+             .InstancePerRequest();
+
+            builder.RegisterType<UserLogic>()
+             .As<IUserLogic>()
+             .InstancePerRequest();
         }
 
         private static void RegisterRepositories(ContainerBuilder builder)

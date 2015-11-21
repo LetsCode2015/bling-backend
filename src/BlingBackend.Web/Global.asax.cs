@@ -13,6 +13,7 @@ namespace BlingBackend.Web
         protected void Application_Start()
         {
             ContainerBuilder containerBuilder = new ContainerBuilder();
+            containerBuilder.RegisterControllers(typeof(MvcApplication).Assembly);
             containerBuilder.RegisterModule(new BlingBackendAutofacModule());
             DependencyResolver.SetResolver(new AutofacDependencyResolver(containerBuilder.Build()));
             AreaRegistration.RegisterAllAreas();

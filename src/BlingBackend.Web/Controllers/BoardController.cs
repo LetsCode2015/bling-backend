@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using BlingBackend.Logic.Interfaces;
+using BlingBackend.Model;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
-using BlingBackend.Logic.Interfaces;
-using BlingBackend.Model;
 
 namespace BlingBackend.Web.Controllers
 {
@@ -10,7 +10,7 @@ namespace BlingBackend.Web.Controllers
     {
         private readonly IBoardLogic _logic;
 
-        public BoardController(IBoardLogic logic) 
+        public BoardController(IBoardLogic logic)
         {
             _logic = logic;
         }
@@ -18,7 +18,7 @@ namespace BlingBackend.Web.Controllers
         [HttpGet]
         public ActionResult GetAll()
         {
-            return Json(_logic.GetAll().ToList());
+            return Json(_logic.GetAll().ToList(), JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
@@ -30,7 +30,7 @@ namespace BlingBackend.Web.Controllers
         [HttpGet]
         public ActionResult Get(int id)
         {
-            return Json(_logic.Get(id));
+            return Json(_logic.Get(id), JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
