@@ -19,7 +19,7 @@ namespace BlingBackeng.Data.Logic
             _dbContext = dbContext;
         }
 
-        public int Create(T entity)
+        public virtual int Create(T entity)
         {
             T addedEntity = _dbContext.Set<T>().Add(entity);
 

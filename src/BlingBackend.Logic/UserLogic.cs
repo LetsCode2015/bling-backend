@@ -16,7 +16,12 @@ namespace BlingBackend.Logic
 
         public bool Signup(User item)
         {
-            _userRepository.Create(item);
+            var user = _userRepository.Get(item.Id);
+            if (user == null)
+            {
+                _userRepository.Create(item);
+            }
+
             return true;
         }
     }

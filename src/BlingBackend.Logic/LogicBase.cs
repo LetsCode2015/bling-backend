@@ -13,24 +13,24 @@ namespace BlingBackend.Logic
             _repository = repository;
         }
 
-        public int Create(T entity)
+        public virtual int Create(T entity)
         {
-            throw new System.NotImplementedException();
+            return _repository.Create(entity);
         }
 
         public T Get(int id)
         {
-            throw new System.NotImplementedException();
+            return _repository.Get(id);
         }
 
         public bool Update(T entity)
         {
-            throw new System.NotImplementedException();
+            return _repository.Update(entity);
         }
 
         public bool Delete(int id)
         {
-            throw new System.NotImplementedException();
+            return _repository.Delete(id);
         }
 
         public IQueryable<T> GetAll()
