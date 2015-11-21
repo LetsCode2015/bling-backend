@@ -18,7 +18,7 @@ namespace BlingBackend.Web.Controllers
         [HttpGet]
         public ActionResult GetAll()
         {
-            return Json(_logic.GetAll().ToList());
+            return Json(_logic.GetAll().ToList(), JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
@@ -30,7 +30,7 @@ namespace BlingBackend.Web.Controllers
         [HttpGet]
         public ActionResult Get(int id)
         {
-            return Json(_logic.Get(id));
+            return Json(_logic.Get(id), JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
