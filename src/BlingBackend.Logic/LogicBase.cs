@@ -35,7 +35,7 @@ namespace BlingBackend.Logic
 
         public IQueryable<T> GetAll()
         {
-            throw new System.NotImplementedException();
+            return _repository.GetAll();
         }
     }
 }
